@@ -2,6 +2,7 @@ package com.liucz.listener;
 
 import com.liucz.event.MyEvent;
 import org.springframework.context.event.EventListener;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 /**
@@ -15,6 +16,7 @@ public class MyListener {
      * @param myEvent
      */
     @EventListener
+    @Async
     public void point(MyEvent myEvent) {
 
         /*
